@@ -2,6 +2,7 @@ import React from 'react'
 import Menu from './Menu'
 import {ImHome} from 'react-icons/im'
 import {HiInformationCircle} from 'react-icons/hi'
+import DarkM from './DarkM'
 function Head() {
   return (
 
@@ -14,11 +15,14 @@ function Head() {
       </div>
       {/* logo part */}
       <div className='mr-4 mt-4 max-w-6xl sm:mx-auto'>
-      <h2 className='text-2xl'>
+     <div className=''>
+     <h2 className='text-2xl flex justify-between space-x-5'>
+        <DarkM/>
 <span className='bg-amber-500 rounded-lg py-1 px-2 mr-1'>IMDb</span>
 <span className='text-xl hidden sm:inline'>clone</span>
 
       </h2>
+     </div>
       </div>
     </div>
   )
