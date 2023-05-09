@@ -1,10 +1,15 @@
+import Result from '@/components/Result';
 import Image from 'next/image'
+const API_KEY = process.env.API_KEY;
 
-export default function Home() {
+export default async function Home({searchParams}) {
+  const genre = searchParams.genre || "fetchTrending";
+   const res = await fetch(`https://api.themoviedb.org/3/${genre === "fetchTrending" ? "trending/movie/week" : "movie/top_rated/"}?api_key=${API_KEY}`);
+  const data = await res.json();
+  const movies = data.results;
   return (
    <>
-   <h3 className='text-center text-3xl mt-4 underline-dark-50 text-orange-500'>Home</h3>
-   
+<Result result={movies} className="text-center"/>   
    
    
    </>

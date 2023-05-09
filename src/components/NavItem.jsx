@@ -6,7 +6,6 @@ function NavItem({title, param}) {
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
   
-  console.log(genre);
   return (
     <div>
     <Link href={`/?genre=${param}`} className={`
