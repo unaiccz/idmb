@@ -13,7 +13,7 @@ function NavItem({title, param}) {
     
     // //to make a variable do $
     ${genre && genre === param && "underline underline-offset-8 decoration-4 decoration-amber-600 rounded-lg" }
-    `}
+      mx-4`}
     >
     <h1>{title}</h1>
     </Link>
