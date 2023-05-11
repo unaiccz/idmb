@@ -13,7 +13,7 @@ width={500}
 height={300}
 className='sm:rounded-t-lg group-hover:opacity-60 transition-opacity delay-200'
 placeholder='blur'
-blurDataURL='/lod.vg'
+blurDataURL='/lod.svg'
 alt='movie'
 style={
   {maxWidth:'100%', height:'auto'}
