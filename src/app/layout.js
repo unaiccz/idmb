@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
   import Providers from '@/app/Providers'
 import Nav from '@/components/Nav'
+import Search from '@/components/Search'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
 
 <Head/>
 <Nav/>
+<Search/>
         {children}  
         <footer></footer>
 
