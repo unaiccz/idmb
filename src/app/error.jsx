@@ -17,4 +17,4 @@ function Error({error, reset}) {
   )
 }
 
-export default error
+export default Error
