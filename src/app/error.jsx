@@ -1,10 +1,10 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 
-function error({error, reset}) {
+function Error({error, reset}) {
   useEffect(() => {
 
-console.log(error)
+
 
 
 
