@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
 <Nav/>
 <Search/>
         {children}  
-        <footer></footer>
+        <footer>@unaicc &copy all rights reserver</footer>
 
 </Providers>
 
